@@ -1,4 +1,4 @@
-from movies import app
+from movies import routes
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    routes.app.run(debug=True)

@@ -1,7 +1,7 @@
 import os
 import secrets
 from PIL import Image
-from flask import render_template, url_for, flash, redirect, request, abort
+from flask import render_template, url_for, flash, redirect, request, abort, Flask
 from movies import app, db, bcrypt
 from movies.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm
 from movies.models import User, Post
