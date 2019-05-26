@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="assets/code.js"></script>
+    <title>Ratings Predictor</title>
+  </head>
+  <body>
+      <h1><a href="http://127.0.0.1:5000/" style="color: white">Home Page</a></h1>
+    <br>
+    <br>
+    <div class="container main">
+    <div class="jumbotron" id="holder">
+    <h1 class='main_heading'> Machine learning app for Movie Rating Prediction</h1>
+    <h3>Know how you movie will perform when its released</h3>
+    <br>
+    <div class="instructions">
+      <h2>Instructions: </h2>
+      <p>1. Fill the form with required values</p>
+      <p>2. Click Submit to see predictions</p>
+    </div>
+    <br>
+    <br>
+    <form class="form-horizontal", method="Post">
+      <li>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Votes</label>
+        <div class="col-sm-10">
+          <input  class="form-control" name="votes" placeholder=" Enter votes" >
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Movie Length</label>
+        <div class="col-sm-10">
+          <input  class="form-control" name="movielength" placeholder=" Enter Movie Length" >
+        </div>
+      </div>
+    </li>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Actor</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="actors" value="Actor">Actor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Production Company</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="prodco" value="prodco">prodco</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Country</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="country" value="country">country</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Budget</label>
+        <div class="col-sm-10">
+          <input class="form-control" name="budget" placeholder=" Enter Budget" >
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Writer</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="writer" value="Evans">Evans</option> 
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Filming Location</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="filminglocation" value="filminglocation">Filming Location</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Genre</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="genre" value="genre">genre</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Director</label>
+        <div class="col-sm-10">
+          <select>
+            <option name="director" value="director">Director</option>
+          </select>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Year</label>
+        <div class="col-sm-10">
+          <input class="form-control" name="year"placeholder=" Enter Year" >
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="button btn btn-default">Predict</button>
+        </div>
+      </div>
+    </form>
+    <h2 class="result"></h2>
+  </div>
+</div>
+
+<!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <div class="footer-copyright text-center py-3">
+        <div class="bottom">
+          <p><a href="#">@Kevo| Movie Rating Predictor | All rights reserved</a></p>
+        </div>
+      </div>
+
+    </footer>
+  <!-- Footer -->
+
+
+  </body>
+</html>
