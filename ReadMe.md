@@ -1,3 +1,3 @@
-FlaskMovies
+# FlaskMovies
 
-an app for movies rating prediction
+## an app for movies rating prediction
